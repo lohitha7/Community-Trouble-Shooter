@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    <h1>Enter Your Details</h1>
+    <form id="detailsForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required>
+        <br>
+        <label for="locality">Locality:</label>
+        <input type="text" id="locality" required>
+        <br>
+        <br>
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" required>
+        <br>
+        <label for="problem">Problem:</label>
+        <input type="text" id="problem" required>
+        <br>
+        <input type="submit" value="register">
+    </form>
+    <script>
+        document.getElementById('detailsForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            // Get input values
+            const name = document.getElementById('name').value;
+            const locality = document.getElementById('locality').value;
+            const phone = document.getElementById('phone').value;
+            const problem = document.getElementById('problem').value;
+
+            // Create an object to store the data
+            const data = {
+                name: name,
+                locality: locality,
+                phone: phone,
+                problem: problem
+            };
+
+            // Save data to Local Storage as a JSON string
+            localStorage.setItem('userData', JSON.stringify(data));
+
+            // Redirect to the other page to display saved details
+            window.location.href = 'C:/Users/NUTHNA/OneDrive/Desktop/hackathon/src/display.html';
+        });
+    </script>
+</body>
+</html>

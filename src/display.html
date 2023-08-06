@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Display Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .details-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin: 20px;
+        }
+
+        .detail {
+            font-weight: bold;
+        }
+
+        .value {
+            margin-left: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Saved Details</h1>
+    <div class="details-container">
+        <div class="detail">Name:</div>
+        <div class="value" id="display-name"></div>
+        <div class="detail">Locality:</div>
+        <div class="value" id="display-locality"></div>
+
+        <div class="detail">Phone:</div>
+        <div class="value" id="display-phone"></div>
+
+        <div class="detail">Problem:</div>
+        <div class="value" id="display-problem"></div>
+    </div>
+
+    <script>
+        // Retrieve data from Local Storage and display it on the page
+        const userDataString = localStorage.getItem('userData');
+        if (userDataString) {
+            const userData = JSON.parse(userDataString);
+            document.getElementById('display-name').textContent = userData.name;
+            document.getElementById('display-locality').textContent=userData.locality;
+            document.getElementById('display-phone').textContent = userData.phone;
+            document.getElementById('display-problem').textContent = userData.problem;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+import React from "react";
+import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import './App.css';
+
+const App = () => {
+  return (
+    <React.Fragment>
+
+<div class="navbar">
+<div class="title">
+   <h1> COMMUNITY TROUBLESHOOTER </h1>
+</div>
+  
+<div class="menu">
+                <ul>
+                    <li><a href="http://localhost/crm/index.html">ABOUT</a></li>
+                </ul>
+            </div>
+</div>
+   <div className="container text-center">
+  <div className="row">
+    <div className="col">
+    <div class="card">
+  <img src="https://imgs.search.brave.com/x4sKfq9wLIcGRSsBgY_KX_PTI9TN7B6v8NR5fW-jRqs/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS1waG90/by9wZW9wbGUtY2hh/cml0eS1mYW1pbHkt/Y2FyZS1jb25jZXB0/LWNsb3NlLXVwLXdv/bWFuLWdpcmwtaGFu/ZHMtaG9sZGluZy1w/YXBlci1mYW1pbHkt/Y3V0b3V0XzM4MDE2/NC04OTYwMS5qcGc_/c2l6ZT02MjYmZXh0/PWpwZw" class="card-img-top" alt="..." height="200px"/>
+  <div class="card-body">
+    <h5 class="card-title">Public Safety and Social Welfare</h5>
+    <p class="card-text"></p>
+    
+    <form action ="http://127.0.0.1:5500/src/public.html">
+                    <button type="submit" class="btn btn-primary">Enter</button>
+    </form>
+  </div>
+</div>
+    </div>
+    <div className="col">
+     <div class="card">
+  <img src="https://imgs.search.brave.com/wDK0kosAo24wfa4CGeiXwtkjocuBlUvXNATrZsAycCY/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTQx/MzAzMTgzMS9waG90/by9tZWRpY2luZS1k/b2N0b3ItaG9sZGlu/Zy1yZWQtaGVhcnQt/c2hhcGUtaW4taGFu/ZC1tZWRpY2FsLWNv/bmNlcHQtc3RvY2st/cGhvdG8uanBnP3M9/NjEyeDYxMiZ3PTAm/az0yMCZjPTdiS29P/UEpHc2t0OHBGSHJ4/VmZzNWdUOGM1X25Z/NVRmc3JhQ0E5Yk5m/QXM9" class="card-img-top" alt="..." height="200px"/>
+  <div class="card-body">
+    <h5 class="card-title">Healthcare</h5>
+    <p class="card-text"></p>
+    <form action ="http://127.0.0.1:5500/src/healthcare.html">
+                    <button type="submit" class="btn btn-primary">Enter</button>
+    </form>
+  </div>
+</div>
+    </div>
+    <div className="col">
+     <div class="card">
+  <img src="https://imgs.search.brave.com/sBaTRizJoA8AZ3y2i48UV16wCjIu57s_TV02tZaYi8g/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTIx/MDc3MjQzNS9waG90/by9jb25zZXJ2ZS13/YXRlci1jb25zZXJ2/ZS1saWZlLmpwZz9z/PTYxMng2MTImdz0w/Jms9MjAmYz1STWVn/UzhxT0NNWHdjS0tR/V2tWTjA5QmZfVlpi/eFFSSDZZeXBHY3BH/bW9VPQ" class="card-img-top" alt="..." height="200px"/>
+  <div class="card-body">
+    <h5 class="card-title">Water and Sanitation</h5>
+    <p class="card-text"></p>
+    <form action ="http://127.0.0.1:5500/src/water.html">
+                    <button type="submit" class="btn btn-primary">Enter</button>
+    </form>
+  </div>
+</div>
+    </div>
+    <div className="col">
+     <div class="card">
+  <img src="https://imgs.search.brave.com/1-_vnA1npv14Q6DW4exQLSOvhwMlS2OHb9sFnI7W7Gs/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZS5zaHV0dGVyc3Rv/Y2suY29tL21vc2Fp/Y18yNTAvMjUyMzQ5/MC8xNDI5ODkxMzM0/L3N0b2NrLXBob3Rv/LWVsZWN0cmljaXR5/LXBvd2VyLWluLW5h/dHVyZS1jbGVhbi1l/bmVyZ3ktY29uY2Vw/dC1zb2xhci1wYW5l/bC13aXRoLXR1cmJp/bmUtYW5kLXRvd2Vy/LWhpZ2h0LXZvbHRh/Z2UtMTQyOTg5MTMz/NC5qcGc" class="card-img-top" alt="..." height="200px"/>
+  <div class="card-body">
+    <h5 class="card-title">Electricity and Municipality</h5>
+    <p class="card-text"></p>
+    <form action ="http://127.0.0.1:5500/src/electricity.html">
+                    <button type="submit" class="btn btn-primary">Enter</button>
+    </form>
+  </div>
+</div>
+    </div>
+  </div>
+</div>
+  </React.Fragment>
+  );
+};
+
+export default App;
